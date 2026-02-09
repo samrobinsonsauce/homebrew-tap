@@ -5,21 +5,21 @@
 class Eztest < Formula
   desc "TUI for selecting and running Elixir tests"
   homepage "https://github.com/samrobinsonsauce/eztest"
-  version "1.0.11"
+  version "1.0.12"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/samrobinsonsauce/eztest/releases/download/v1.0.11/eztest_1.0.11_darwin_amd64.tar.gz"
-      sha256 "613f7f97b709dfb22870a8f60bd007262e49ae8feba22b45a4441801105ae5ec"
+      url "https://github.com/samrobinsonsauce/eztest/releases/download/v1.0.12/eztest_1.0.12_darwin_amd64.tar.gz"
+      sha256 "7d2afb387c0fd7071cf124a067a1b5c0be1a698666d5a4c48b6e736d34164736"
 
       def install
         bin.install "eztest"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/samrobinsonsauce/eztest/releases/download/v1.0.11/eztest_1.0.11_darwin_arm64.tar.gz"
-      sha256 "14913d661951c95c43677eef719f9130bbea390eb3b11e71e539cc194ca8ff16"
+      url "https://github.com/samrobinsonsauce/eztest/releases/download/v1.0.12/eztest_1.0.12_darwin_arm64.tar.gz"
+      sha256 "cfd050b23a2d634782180bad433f3def91c75fc134e650a8123d889aa317eaa1"
 
       def install
         bin.install "eztest"
@@ -29,15 +29,15 @@ class Eztest < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/samrobinsonsauce/eztest/releases/download/v1.0.11/eztest_1.0.11_linux_amd64.tar.gz"
-      sha256 "9b28799bbb105b63224ddd1fe478eb93ebf8a79d18a1b324f5ac4ecee7cfce78"
+      url "https://github.com/samrobinsonsauce/eztest/releases/download/v1.0.12/eztest_1.0.12_linux_amd64.tar.gz"
+      sha256 "29bc48620a520f6acc56ee1537540858c8dce6aa88222726639e039188c482cf"
       def install
         bin.install "eztest"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/samrobinsonsauce/eztest/releases/download/v1.0.11/eztest_1.0.11_linux_arm64.tar.gz"
-      sha256 "dea192bd7e0b9f73ec76bd7885c439870dcd05056d3296f08d1512d602cb8d5a"
+      url "https://github.com/samrobinsonsauce/eztest/releases/download/v1.0.12/eztest_1.0.12_linux_arm64.tar.gz"
+      sha256 "d14882ce1e14d6ff237e2e39d8c2908e1401037d0579fabbe804702dcc7882fe"
       def install
         bin.install "eztest"
       end
